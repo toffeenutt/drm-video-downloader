@@ -2,8 +2,14 @@
 Download DRM video from iframe.mediadelivery.net
 
 ## Version
-Ubuntu 22.04.3  
+Ubuntu 22.04.3 (WSL2)  
 Python 3.10.12
+
+## Module and Library
+pip install httpx
+pip install pycryptodome
+
+sudo apt install ffmpeg
 
 ## README
 You may need to edit the header.  
