@@ -6,7 +6,7 @@ Ubuntu 22.04.3 (WSL2)
 Python 3.10.12
 
 ## Module and Library
-pip install httpx
+pip install httpx  
 pip install pycryptodome
 
 sudo apt install ffmpeg
