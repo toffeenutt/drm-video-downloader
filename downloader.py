@@ -75,12 +75,11 @@ playlistURI = player[start_idx:end_idx]
 playlist = client.get(playlistURI, headers=playlistHeaders).text
 ###
 
-start_idx = playlist.find('1280x720/video.drm')
-end_idx = playlist.find('\n', start_idx)
-tsListURI = playlistURI[:playlistURI.find('playlist')] + playlist[start_idx:end_idx]
+resolution = playlist.split('\n')[-1]
+tsListURI = playlistURI[:playlistURI.find('playlist')] + (resolution if resolution != '' else playlist.split('\n')[-2])
 
 ###
-tsList = client.get(tsListURI, headers=playlistHeaders).text
+tsList = client.get(tsListURI, headers=playlistHeaders).text #video.drm
 ###
 ######################################################################################################
 client.headers['Origin'] = 'https://iframe.mediadelivery.net'
