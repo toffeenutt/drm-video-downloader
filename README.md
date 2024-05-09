@@ -1,5 +1,5 @@
 # drm-video-downloader
-Download DRM video from iframe.mediadelivery.net
+Download DRM video hosted by iframe.mediadelivery.net
 
 ## Version
 Ubuntu 22.04.3 (WSL2)  
